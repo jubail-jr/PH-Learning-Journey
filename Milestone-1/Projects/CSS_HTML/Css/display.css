@@ -1,0 +1,21 @@
+.first-article{
+    background-color: red;
+}
+.second-article{
+    background-color: lightblue;
+    display: none;
+}
+.third-article{
+    background-color: greenyellow;
+}
+.fourth-article{
+    background-color: yellow;
+}
+span{
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    border: 5px solid orchid;
+    width: 250px;
+    height: 50px;
+}

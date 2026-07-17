@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Html Webpage</title>
+</head>
+<body>
+    
+    <header>
+        <h1>My Learned Html Webpage</h1>
+        <p>This is Common Paragraph tag (p) | A brief description of the page appears here. </p>
+        <nav>
+            <span><strong>Navigation Menu</strong></span>
+            <a href="#headline">Headline</a>
+            <a href="#textFormating">Text Formating</a>
+            <a href="#media">Media</a>
+            <a href="#list">List</a>
+            <a href="#table">Table</a>
+            <a href="#form">Form</a>
+
+        </nav>
+        <hr>
+    </header>
+
+    <section>
+        <h1>Level 1 Heading (H1) - Perfect for the section</h1>
+        <h2>Level 2 Heading (H2) - Perfect for the section</h2>
+        <h3>Level 3 Heading (H3) - Perfect for the section</h3>
+        <h4>Level 4 Heading (H4) - Perfect for the section</h4>
+        <h5>Level 5 Heading (H5) - Perfect for the section</h5>
+        <h6>Level 6 Heading (H6) - Perfect for the section</h6>
+    </section>
+    <hr>
+
+
+    <section>
+
+        <h1>Text Formating Tags</h1>
+        <p>In this paragraph, we will look at various formatting tags:</p>
+        <ul>
+
+            <li>This is <b>Bold(b)</b> text.</li>
+            <li>This is <strong>Important(strong)</strong> text.</li>
+            <li>This is <i>Italic(i)</i> text.</li>
+            <li>This is <em>Embercise</em> text</li>
+            <li>This is <mark>Highlight</mark> text.</li>
+            <li>This is <del>Deleted</del> text and This is <ins>Add New Word</ins> text</li>
+            <li>This is <sub>Subscript(for example H<sub>2</sub>0 )</sub> and This is <sup>SuperScript(for Example A<sup>2</sup>)</sup> Text</li>
+            <li>This is <small>Small Size (small)</small> Text</li>
+            <li>This is <q>Short quote (Qoute)</q></li>
+            <li><blockquote>This is a long quote (Blockquote). It is usually indented slightly to the right of the main text.</blockquote></li>
+        </ul>
+        <p>For writing code: <code>console.log("Hello World");</code></p>
+        <pre>
+            This is pre-formatted (pre) text.
+                      It will appear in the browser exactly as I insert spaces    and
+         line breaks here.
+            </pre>
+
+    </section>
+    <hr>
+
+    <section>
+        <h1>Media and Link</h1>
+        <p>An external link <a href="www.facebook.com">Visit Facebook</a></p>
+
+        <h3>An image or picture</h3>
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Coding picture" width="350" height="250">
+
+        <h3>An audio or a song</h3>
+        <audio controls src="Media/audio.mp3"></audio>
+
+        <h3>A coding video</h3>
+        <video controls src="Media/video.mp4" width="400" height="400"></video>
+
+        <h3>Football match videos on YouTube</h3>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/nB44nGADMbM?mute=0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+</iframe>
+
+    </section>
+    <hr>
+
+    <section>
+
+        <h1>List tags</h1>
+        <h2>Unordered List</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h2>Ordered List</h2>
+        <ol>
+            <li>1st Step</li>
+            <li>2nd Step</li>
+            <li>3rd Step</li>
+        </ol>
+
+        <h2>Description List</h2>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- A hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- A cold or hot nutritious drink.</dd>
+        </dl>
+
+
+    </section>
+    <hr>
+
+    <section>
+        <h1>Table</h1>
+        <table border="1">
+            <caption>Student Information</caption>
+            <thead>
+                <tr>
+                    <th>Roll</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Jubail</td>
+                    <td>Ten</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Rakib</td>
+                    <td>Ten</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Arif</td>
+                    <td>Ten</td>
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Student : 3</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+
+    </section>
+    <hr>
+
+    <section>
+
+        <h1>User Form (Form and Inputs)</h1>
+
+        <form>
+
+            <label for="name">Name:</label><br><br>
+        <input type="text" name="name" id="name" placeholder="Enter your Name"><br><br>
+
+        <label for="email">Email:</label><br><br>
+        <input type="email" name="email" id="email" placeholder="Enter your Email"><br><br>
+        
+        <label for="password">Password:</label><br><br>
+        <input type="password" name="password" id="password"><br><br>
+
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others" value="others">
+        <label for="others">Others</label> <br><br>
+
+        <label for="skills">Skills:</label><br><br>
+        <input type="checkbox" name="skill" id="skill" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skill" id="skill" value="CSS">
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="skill" id="skill" value="javaScript">
+        <label for="javaScript">JavaScript</label><br><br>
+
+        <label for="country">Country:</label><br><br>
+        <select name="country" id="country">
+
+            <option value="select">Select</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="india">India</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="japan">Japan</option>
+            <option value="korea">South Korea</option>
+            <option value="Maldives">Maldives</option>
+        </select><br><br>
+
+        <label for="message">Write something about yourself:</label><br><br>
+
+        <textarea name="message" id="userMessage" cols="40" rows="6" placeholder="Write Here..."></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+
+        </form>
+
+
+
+    </section>
+    <hr>
+
+    <section>
+        <h1>Interactive tag</h1>
+        <details>
+            <summary>Click here for details (Details/Summary)</summary>
+            <p>You have successfully taken a quick look at almost all the important HTML tags!</p>
+        </details>
+    </section><hr>
+
+    <footer>
+
+        <p>&copy;2026 JR Jubail | All Rights Reserves</p>
+
+    </footer>
+</body>
+</html>

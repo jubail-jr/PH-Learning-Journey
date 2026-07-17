@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Common CSS */
+
+.common-btn a{
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    background-color: #E9B44C;
+    color: #2E2622;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Header Section CSS */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background-color: #2E2622;
+}
+.logo-area{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.logo-area h2{
+    color: #E9B44C;
+    font-size: 26px;
+    font-weight: 700;
+}
+.nav-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.nav-links ul a{
+    text-decoration: none;
+    color: #FBF6EF;
+}
+
+/* Banner Section */
+
+.banner{
+    background-image: url("./image/bg-image.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+}
+.banner-content h4{
+    color: #E9B44C;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.banner-content h1{
+    color: #FBF6EF;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-content p{
+    color: #F0E9DD;
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+/* Our Story Section Css */
+
+.our-story{
+    width: 100%;
+    height: auto;
+    padding: 100px 8%;
+}
+.our-story .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.container .image-content img{
+    width: 580px;
+    height: 380px;
+    border-radius: 12px;
+}
+
+.text-content p{
+    color: #5A4F47;
+    font-size: 16px;
+    font-weight: 400;
+    width: 580px;
+    margin: 0 0 30px ;
+}
+
+/* Populer Section */
+
+.populer{
+    background-color:#F1E7D8;
+    height: auto;
+    padding: 100px 8%;
+}
+.populer h4{
+    text-align: center;
+    color: #E9B44C;
+    font-size: 13px;
+    font-weight: 700;
+}
+.populer .section-title{
+    text-align: center;
+    font-size: 34px;
+}
+.populer .container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    align-items: center;
+}
+.populer .container .card{
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+}
+.populer .card img{
+    width: 54px;
+    height: 64px;
+}
+.populer .card h5{
+    font-size: 19px;
+    color: #2E2622;
+    margin: 15px 0;
+}
+.populer .card .card-desciption{
+    color: #2E2622;
+    margin-bottom: 15px;
+}
+.populer .card .price{
+    color: #E9B44C;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Different Section */
+
+.different{
+    height: 80vh;
+    padding-top: 5%;
+    text-align: center;
+}
+.different h5{
+    color: #E9B44C;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.different h2{
+    color: #2E2622;
+    font-size: 34px;
+    font-weight: 700;
+}
+.different .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    margin: 100px 0;
+}
+.maker-card img{
+    height: 65px;
+    width: 65px;
+}
+.maker-card h4{
+    font-size: 19px;
+    color: #2E2622;
+    margin: 20px 0 10px;
+    font-weight: 700;
+}
+.maker-card p{
+    color: #2E2622;
+    font-size: 16px;
+}
+.opening-hours{
+    text-align: center;
+    padding: 50px 0;
+}
+.opening-hours h5{
+    color: #E9B44C;
+    font-size: 13px;
+    font-weight: 700;
+}
+.opening-hours h2{
+    font-size: 34px;
+    color: #2E2622;
+    font-weight: 700;
+    margin: 15px 0;
+}
+.opening-hours .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.opening-hours table{
+    width: 700px;
+    border-collapse: collapse;
+}
+.opening-hours thead{
+    background-color: #2E2622;
+    font-size: 14px;
+    padding: 18px;
+    text-align: center;
+    color: #E9B44C;
+}
+.opening-hours thead th{
+    border: 1px solid #ffffff;
+    padding: 18px;
+}
+.opening-hours tbody td{
+    border: 1px solid #2E2622;
+    padding: 18px;
+    color: #2E2622;
+    font-weight: 400;
+    font-size: 16px;
+}
+.opening-hours .image{
+    background-image: url(./image/footer-img.avif);
+    width: 1240px;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.coffee-banner{
+    position:relative;
+    width:1240px;
+    height:400px;
+    background-image:
+    url("./image/footer-img.avif");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    border-radius:20px;
+    overflow:hidden;
+}
+.info-card{
+    position:absolute;
+    left:25px;
+    bottom:25px;
+    width:263px;
+    height: 95px;
+    background-color:#ffffff;
+}
+
+.info-card h2{
+    font-size:16px;
+    margin-bottom:10px;
+    color: #2E2622;
+    font-weight: 700;
+}
+
+.info-card p{
+    color:#5A4F47;
+    font-size: 13px;
+}
+.open-badge{
+
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:100px;
+    height:100px;
+    background-color:#ffffff;
+    border-radius:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.open-badge h3{
+    font-size:24px;
+    font-weight:700;
+    color: #2E2622;
+}
+
+.open-badge span{
+    font-size:11px;
+    font-weight: 700;
+    color:#7A6F63;
+}

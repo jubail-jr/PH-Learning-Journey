@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common CSS Start */
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+}
+.common-btn a{
+    text-decoration: none;
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border:none;
+    border-radius:10px;
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight:700;
+    transition:background-color ease 0.5s;
+}
+.common-btn a:hover{
+    background-color: #c25609;
+}
+
+.outline-btn a{
+    text-decoration: none;
+    background-color: #fff8f3;
+    border: 1px solid #FD6E0A;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 1.2rem;
+    color: #FD6E0A;
+    font-weight: 700;
+    transition: background-color ease 0.5s;
+}
+.outline-btn a:hover{
+    background-color: #FD6E0A;
+    color: #fff;
+}
+/* Header Section Start */
+header{
+    padding: 10px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo-area h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.logo-area h2 .logo-r{
+    color:#FD6E0A;
+}
+.logo-area h2:hover .logo-r{
+    color:#53e036;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+header nav ul li a{
+    text-decoration:none;
+    color:#474747 ;
+    font-size: 1.2rem;
+}
+header nav ul li a:hover{
+    color:#FD6E0A;
+}
+
+/* Hero Section Start */
+
+.hero-section{
+    background-color: #fff8f3;
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+.text-area h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.text-area h1{
+    margin: 10px 0;
+    font-size: 2.8rem;
+}
+.text-area p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #757575;
+}
+.button-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+/* About Section Start */
+
+.about-us{
+    background-color:#FFF8F3;
+    margin: 90px auto;
+    padding: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.about-text-content{
+    text-align: center;
+}
+.about-text-content h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about-text-content p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+    margin-bottom: 30px;
+}
+.about-me-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+.about-me-info p{
+    text-align: center;
+    color: #757575;
+}
+
+/* What I Do Section Start */
+.what-i-do{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 100px auto;
+}
+
+.what-i-do-text-content{
+    text-align: center;
+}
+.what-i-do-text-content h3{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.what-i-do-text-content p{
+    font-size: 15px;
+    color: #757575;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 700px;
+}
+.what-i-do-services-grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
+.what-i-do-services-grid .services-card{
+    background-color: #FFF8F3;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.what-i-do-services-grid .services-card:hover{
+    background-color: #e1d7d0;
+}
+.what-i-do-services-grid img{
+    width: auto;
+    height: auto;
+}
+.what-i-do-services-grid h4{
+    font-size: 1.4rem;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.what-i-do-services-grid p{
+    font-size: 15px;
+    color: #757575;
+    line-height: 1.9;
+    max-width: 80%;
+}
+
+/* My Resume Section Start */
+
+.my-resume{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+.my-resume .resume-heading{
+    font-size: 2rem;
+    margin: 30px auto;
+}
+.cv-experience-education{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.cv-education,.cv-experience{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.my-education-heading,.my-experience-heading{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.cv-education-item,.cv-experience-item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    border-bottom: 1px solid #D1D1D1;
+    padding-bottom: 20px;
+}
+.cv-education-item h4,.cv-experience-item h4{
+    font-size: 1.3rem;
+}
+.cv-education-item h5,.cv-experience-item h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #757575;
+    margin: 10px 0 15px;
+}
+.cv-education-item p,.cv-experience-item p{
+    font-size: 15px;
+    font-weight: normal;
+    color: #757575;
+}
+
+/* My Amazing Work Section Start */
+
+.my-works{
+    text-align: center;
+    margin: 100px auto;
+}
+.my-works h2{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    gap: 15px;
+    grid-auto-rows: 200px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    "four five six"
+    ;
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;
+}
+.box-3{
+    grid-area: three;
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;
+}
+.box-6{
+    grid-area: six;
+}
+
+/* Footer Section Start */
+
+footer{
+    background-color: #fff8f3;
+    padding: 100px;
+}
+.footer-parent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 100px;
+}
+.footer-parent .text-content{
+    max-width: 600px;
+}
+.footer-parent .text-content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.footer-parent .text-content p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #757575;
+    margin: 20px 0;
+}
+.icon-area span{
+    font-size: 20px;
+    color: #FD6E0A;
+    font-weight: 700;
+}
+.form-content{
+    width: 100%;
+    max-width: 450px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    max-width: 400px;
+}
+form h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+form input,textarea{
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    outline: none;
+    border-radius: 8px;
+}
+.submit{
+    width: max-content;
+    background-color: #FD6E0A;
+    padding: 10px 20px;
+    border:none;
+    border-radius:10px;
+    font-size: 1.2rem;
+    color:#fff;
+    font-weight:700;
+    transition:background-color ease 0.5s;
+}
