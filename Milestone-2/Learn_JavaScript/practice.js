@@ -1,19 +1,39 @@
-// Task - 1
+// Task -1
 
-let numbers = [12,34,566,743,3454,23,56,57];
-let sliceNumbers = numbers.slice(2,4)
-console.log(sliceNumbers);
+let Mobail = {
+    brand : "Infinix",
+    model: "Infinix Hot 50 pro",
+    price: 18999,
+}
 
-// Task -2
+for(const key in Mobail){
+    const value = Mobail[key]
+    console.log(key + ":" + value);
+}
 
-let fruits = ["mango", "apple", "orange", "banana"];
-fruits.splice(3,1,"Lichy");
+// Task-2 
 
-console.log(fruits);
+let motorCyle = {
+    name : "Discover",
+    model : "100CC",
+    price : 567000,
+}
 
-// Task - 3
+let motorCylePropertyArr = Object.keys(motorCyle);
 
-let score = [6,4,3,6,2,8,2,1,8,5,3,2,6];
-score.sort();
+for(const key of motorCylePropertyArr){
+    const value = motorCyle[key]
+    
+    console.log(key);
+    console.log(value);
+}
 
-console.log(score);
+// Tast -3 
+
+let userInfo = new Object();
+
+userInfo.name = "Jubail";
+userInfo.age = 19;
+userInfo.proffesion = "Web devloper"
+
+console.log(userInfo);
