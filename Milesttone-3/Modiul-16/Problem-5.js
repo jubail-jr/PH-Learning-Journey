@@ -1,0 +1,17 @@
+const mergeInventory = (arr1,arr2) => {
+    if(!Array.isArray(arr1) || !Array.isArray(arr2)){
+        return `Invalid`
+    }
+    return [...arr1, ...arr2]
+}
+
+function heighestScore (scores){
+    if (!Array.isArray(scores)){
+        return "Invalid"
+    }
+    return Math.max(...scores)
+}
+
+console.log(mergeInventory([1,2], [3,4]));
+console.log(heighestScore([3,7,2,9,4]));
+console.log(heighestScore("3,7,2"));
