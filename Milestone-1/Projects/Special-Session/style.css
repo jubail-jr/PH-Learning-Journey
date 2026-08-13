@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+/* Global Css */
+
+.common-btn{
+    background-color: #FF6B35;
+    padding: 8px 15px;
+    border: none;
+    color: #ffffff;
+}
+
+/* Header */
+
+header{
+    background-color: #1A1A2E;
+    width: 100%;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+}
+nav .logo-area h1{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+}
+nav .logo-area .logo-color{
+    color: #FF6B35;
+}
+nav .nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-links ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Banner Section */
+
+.banner{
+    background:  linear-gradient(rgba(20,15,12,0.65)),  url(./Images/banner.jpg);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #ffffff;
+}
+.banner .content h1{
+    font-size: 36px;
+}
+.banner .content p{
+    font-size: 18px;
+}
+
+/* Services Section */
+
+.services {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.services h1{
+    font-size: 28px;
+    color: #333333;
+}
+.services p{
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Card Section */
+
+.card-section{
+    margin: 100px 0;
+}
+.card-section .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.cards .card{
+    width: 25%;
+}
+.cards img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+.card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+
+}
+
+.card h1, .card p, .card button{
+   margin-top: 12px;
+   margin-left: 12px;
+}
+
+/* Footer Section */
+
+footer{
+    background-color: #1A1A2E;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px;
+}
+
+.footer-head{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: #CCCCCC;
+}
+
+footer div p{
+    color: #CCCCCC;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#popupBox{
+    background-color: #FF6B35;
+    text-align: center;
+    color: #ffffff;
+    padding: 12px 0;
+    display: none;
+}

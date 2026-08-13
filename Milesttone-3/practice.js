@@ -1,74 +1,29 @@
-/*
-  Problem 1: Custom Sort — Descending Numbers
-  sortDescending(nums) — sort an array of numbers from largest to
-  smallest, using a comparator callback passed to .sort(). Return a
-  NEW array — don't mutate the original nums array.
+function calculateSalaryHike(employees) {
 
-  Input:
-    [1, 10, 2, 25, 3]
+    if (typeof employees !== "object" || Array.isArray(employees) || employees === null) return "Invalid"
 
-  Output:
-    [25, 10, 3, 2, 1]
-*/
-const sortDescending = (nums) =>{
-  let copyNum = [...nums]
-  copyNum.sort((a,b)=> {
-    return b-a
-  } )
-  return copyNum
-  
-}
-let numbers = [1,10,2,25,3]
-console.log(sortDescending(numbers));
+    if(typeof employees.name !== "string" || employees.name.trim() === "" || typeof employees.salary !== "number" || employees.salary <=0 || Number.isNaN(employees.salary) || typeof employees.rating !=="string" || employees.rating.trim() === "") return "Invalid"
 
-/*
-  Problem 2: Fix the Mutation Bug — Discount Preview
-  previewDiscount(cart) — should return a NEW array showing what each
-  cart item's price WOULD be after a 10% discount, WITHOUT changing
-  the original cart. The buggy version below accidentally mutates the
-  original objects because objects/arrays are passed by REFERENCE — writing to item.price inside map() edits the
-  very same object the original cart array points to.
+    let name = employees.name
+    let finalSalary = employees.salary
 
-  Input:
-    cart = [
-      { name: "Pen", price: 100 },
-      { name: "Bag", price: 500 },
-    ]
-
-  Output (new array; original cart price fields unchanged):
-    [
-      { name: "Pen", price: 90 },
-      { name: "Bag", price: 450 },
-    ]
-*/
-
-// Buggy version (for live demo) — log cart before/after and watch the
-// ORIGINAL prices change even though we only meant to "preview".
-// const previewDiscount = (cart) => {
-
-//   return cart.map((item) => {
-//     item.price = item.price - item.price * 0.1; 
-//     return item;
-//   });
-// };
-
-const previewDiscount = (cart) => {
-  const updateCart = cart.map((item)=>{
-    return{
-      ...item,
-      price: item.price - (item.price * 0.10)
+    if(employees.rating === "A"){
+        finalSalary = employees.salary + (employees.salary * 0.15)
+        name = name.toUpperCase()
+    } else if (employees.rating === "B"){
+        finalSalary = employees.salary + (employees.salary * 0.1)
+        name = name.toUpperCase()
+    } else if (employees.rating === "C"){
+        finalSalary = employees.salary + (employees.salary *0.05)
+        name = name.toUpperCase()
+    } else{
+        name = name.toUpperCase()
     }
-  })
-  return updateCart
+
+    return {
+        name,
+        finalSalary
+    }
 }
 
-let cart = [
-      { name: "Pen", price: 100 },
-      { name: "Bag", price: 500 },
-    ]
-
-    console.log("Befor" ,cart);
-
-    console.log("preview", previewDiscount(cart));
-    
-    console.log("After:", cart);
+console.log(calculateSalaryHike({ name: "Tanvir", salary: 57000, rating: "A" }));
